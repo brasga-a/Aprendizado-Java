@@ -1,4 +1,4 @@
-Herança é quando uma [[Classe|classe]] filho herda características de uma classe pai, assim adquirindo métodos e [[Atributos|atributos]] desta classe, como por exemplo: [[Classe]] cachorro herda da classe Animal os seguintes [[Atributos|atributos]] **expectativaDeVida**, **especie**, **filo**, **tipoDeAmbiente** e **tipoDeHabitat**, desta forma, não precisamos recriar estes [[Atributos|atributos]] caso fossemos criar outra classe de animal, pois estes compartilham destes mesmos [[Atributos|atributos]].
+Herança é quando uma [[Classe|classe]] filho herda características de uma classe pai, assim adquirindo métodos e [[Atributos|atributos]] desta classe, como por exemplo: [[Classe]] cachorro herda da classe Animal os seguintes [[Atributos|atributos]] **expectativaDeVida**, **especie**, **filo**, **tipoDeAmbiente** e **tipoDeHabitat**, desta forma, não precisamos recriar estes [[Atributos|atributos]] caso fossemos criar outra classe de animal, pois estes compartilham destes mesmos [[Atributos|atributos]]. *Uma classe pode herdar apenas uma vez!*
 		**Como usar:**
 ```
 classe Animal (pai)
@@ -48,3 +48,24 @@ Quando uma [[Classe|classe]] é uma subclasse (classe filha), ela pode ser consi
 				}
 			}
 ```
+
+# Implemento
+
+Um implemento é uma forma de herança onde uma [[Classe|classe]] implementa atributos ou métodos e é obrigatório a tê-los, já a classe ao qual é o implemento se chama interface que é apenas uma abstração, um contrato dizendo que a classe que a implementa deve possuir as seguintes características.
+		**Exemplo:**
+```
+	interface
+			public interface Calculo{
+				public void calcularNumero(int x, y);
+			}
+```
+
+```
+	classe 
+			public class Calculadora implements Calculo(){
+				public void calcularNumero(int x, y){
+					//Código para calcular numero
+				}
+			}
+```
+.                         *Quando implementamos a interface **Calculo** somos obrigados a declarar tudo aquilo que contém dentro da interface, como por exemplo o método **calcularNumero**, ficando apenas a cargo da classe escrever seu código.*
