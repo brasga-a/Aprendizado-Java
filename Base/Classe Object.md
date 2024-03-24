@@ -1,0 +1,1 @@
+É uma [[Classe|classe]] ao qual toda classe no java [[Herança|herda]].
